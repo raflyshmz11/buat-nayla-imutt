@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maaf Ya ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #fff0f5, #ffd6e0);
+    text-align: center;
+    color: #444;
+}
+
+.container { padding: 20px; }
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(255,182,193,0.4);
+}
+
+h1 { color: #ff85a2; }
+h2 { color: #ff9bb3; }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.photo { position: relative; }
+
+.photo img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.4);
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.photo:nth-child(5) {
+    grid-column: span 2;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background: #ff9bb3;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff7fa0;
+}
+
+.heart {
+    position: fixed;
+    color: #ffb6c1;
+    animation: fall 6s linear infinite;
+}
+
+@keyframes fall {
+    0% {transform: translateY(-10%);}
+    100% {transform: translateY(110vh);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+<h1>Maaf Ya (Nama Dia) ❤️</h1>
+
+<p>Aku minta maaf atas semua kesalahan aku...</p>
+<p>Aku sadar aku sering bikin kamu kecewa...</p>
+<p>Aku gak mau kehilangan kamu...</p>
+<p>Aku janji akan berubah dan membahagiakan kamu...</p>
+
+<p>(disini rafly bener bener sayangg samo nayy dan mau samoo nayy nak neyy rafly bakal berusaha dan rafly bener bener jadi pribadi yang lebih baik buat nayy rafly jugo bukan manusio sempurno kadang ado salah yang perlu nayy tau rafly selalu sayangg samo neyy rafly selalu liat neyy ke anak kecill kalau neyy tau yang selalu rafly manjoin rafly bener bener sayangg samo nayy jadi tolong terimo lah diri rafly sekali lagi rafly dak perlu ado label dalam hubungan itu yang perlu tau itu komit kito berduo terserah wong nak bilang apo ke rafly terimo lah dirii rafly sekali lagi. 💔)</p>
+
+<button onclick="alert('Aku sayang kamu ❤️')">
+Klik kalau masih sayang aku
+</button>
+</div>
+
+<h2>Kenangan Kita 📸</h2>
+
+<div class="gallery">
+
+<div class="photo">
+<img src="foto1.jpeg">
+<div class="caption">(ini photoboth pertamo kito dan date pertamo kali kito disini rafly bener bener pertamo kali kaget ado cewe yang galak ngajak split bill dan mau makan di luar itu cewee yang langka rafly temui disitu rafly bener bener respect nian samo neyy dan pengen buat nayy bahagia.)</div>
+</div>
+
+<div class="photo">
+<img src="foto2.jpeg">
+<div class="caption">(disini nayy waktu di kampus lagi red day 1 dan bener bener merintih kesakitan dan demam jugo rafly disitu bener bener khawatir dengan keadaan nayy yang cak itu dan rafly mikir rafly dak boleh ninggalin nayy di posisi cak itu karno rafly tau nayy dwean dikoss katek someone)</div>
+</div>
+
+<div class="photo">
+<img src="foto3.jpeg">
+<div class="caption">(disni kito abis balek kuliah di kamar adin main main disituu nayy bener bener klingii niann raflyyy kangen nian maso itu)</div>
+</div>
+
+<div class="photo">
+<img src="foto4.jpeg">
+<div class="caption">(ini kito nerabas nak beli pecel lele ujan nyo sii rintik tapi banyak niann sampe kito basahhh kuyupp niann dan untung nyo disanoo dak pulo ramee)</div>
+</div>
+
+<div class="photo">
+<img src="foto5.jpeg">
+<div class="caption">(dan ini momen paling berarti buat raflyy yang bener bener rafly inget saat nembak nayy dan nay bilang raflyy kalau sudahh pacaran samo nayy kagek sayang rafly kurangg dan cak mano kalau nayy idak sesuai expetasii nayy disitu rafly bener bener dengan tegas ngomong rafly bakal tetep teruss sayangg samo nayy dan rafly nerimo segalonyoo tentang nayy dan disitu dari situ lah raflyy bener bener siap untuk segalonyoo buat nayy karno rafly sudahh ado hubungan samoo nayy dan disitu nayy cantik dann lucuu niannn ❤️)</div>
+</div>
+
+</div>
+
+<h2>Lagu Favorit Kamu 🎵</h2>
+
+<!-- 🎵 CARA 1: YOUTUBE -->
+<iframe width="300" height="170"
+src="https://youtu.be/HEAn4FqXFY4?si=UZcVlyw1ypfYLsuH"
+frameborder="0" allowfullscreen></iframe>
+
+<!-- 🎵 CARA 2: MP3 (opsional) -->
+<!--
+<audio controls autoplay loop>
+<source src="lagu.mp3" type="audio/mpeg">
+</audio>
+-->
+
+</div>
+
+<script>
+setInterval(() => {
+let h = document.createElement("div");
+h.className="heart";
+h.innerHTML="❤️";
+h.style.left=Math.random()*100+"vw";
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),5000);
+},500);
+</script>
+
+</body>
+</html>
